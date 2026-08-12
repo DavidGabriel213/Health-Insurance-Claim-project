@@ -4,8 +4,8 @@ import pandas as pd
 import joblib
 import os
 #loading model and preprocessor
-model=joblib.load('/storage/emulated/0/Download/HealthInsuranceProject/DecisionTree_model.joblib')
-preprocessor=joblib.load('/storage/emulated/0/Download/HealthInsuranceProject/PreProcessor.joblib')
+model=joblib.load('DecisionTree_model.joblib')
+preprocessor=joblib.load('PreProcessor.joblib')
 app=Flask(__name__)
 @app.route('/',methods=['GET','POST'])
 def myfunc():
